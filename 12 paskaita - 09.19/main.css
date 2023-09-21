@@ -1,0 +1,15 @@
+body {
+  color: red;
+}
+
+body > main > section:nth-child(3) > h1 {
+  background-color: antiquewhite;
+}
+body > main > h1 {
+  color: rgb(255, 0, 183);
+  font-size: 50px;
+}
+body > main > p {
+  color: blue;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

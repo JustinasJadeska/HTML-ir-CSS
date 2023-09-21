@@ -1,0 +1,97 @@
+body {
+
+    background-color: rgb(152, 226, 255);
+}
+
+.navBar {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+ul > li {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+    background-color: rgb(118, 173, 224);
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero {
+    background-image: url(./img/mountains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+}
+
+.hero > h1 {
+    color: white;
+    text-align: right;
+    padding: 20px 20px 0 0;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.part1 {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 100;
+}
+
+p {
+    font-size: 12px;
+}
+
+.image {
+    background-image: url(./img/neom.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 700px;
+}
+
+.foot {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: rgb(118, 173, 224);
+}
+
+@media (min-width: 600px) {
+    .navBar {
+        display: flex;
+        gap: 5px;
+    }
+
+    .navBar > li {
+        padding: 10px 20px;
+    }
+
+    .hero {
+        background-image: url(./img/mountains.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        background-position: center;
+    }
+
+    .part1, .image { 
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

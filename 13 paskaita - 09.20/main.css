@@ -1,0 +1,568 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar2 {
+    display: none;
+}
+
+.navbar > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+
+.navbar > h1 > span {
+    color: rgb(95, 43, 227);
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+    color: rgb(95, 43, 227);
+    margin-right: 10px;
+}
+
+.heropart {
+    height: 700px;
+    background-color: rgb(95, 43, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.heropart > h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.heropart > p {
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.heropart > button {
+    border: none;
+    color: white;
+    background-color: rgb(95, 43, 227);
+    font-weight: 500;
+    padding: 5px 5px;
+    border-bottom: 1px solid rgb(87, 39, 209);
+}
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 550px;
+}
+
+
+.about > h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about > h1 > span {
+    color: rgb(95, 43, 227);
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border {
+    display: none;
+    border: 5px solid rgb(62, 27, 191);
+    height: 250px;
+    width: 400px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.aboutUsImg {
+    width: 400px;
+    background-image: url(./img/About\ us.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    margin: 0;
+}
+
+.explore> h2 {
+    font-weight: 400;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.explore > p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-left: 5px;
+    margin-top: 0;
+}
+
+.explore > p:last-of-type {
+    margin-top: 0;
+    font-weight: 600;
+    color: rgb(95, 43, 227);
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.ourService {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 650px;
+    background-color: rgba(236, 236, 236, 0.505);
+}
+
+.ourService > h1 {
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    font-weight: 500;
+}
+
+.ourService > h1 > span {
+    color: rgb(95, 43, 227);
+}
+
+.ourServiceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card1 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 > h3 {
+    font-weight: 400;
+}
+
+.card1 > p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+.icon2 {
+    width: 50px;
+    height: 50px;
+}
+
+.tours {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tours > h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    font-weight: 500;
+}
+
+.tours > h1 > span {
+    color: rgb(95, 43, 227);
+}
+
+.toursGrid {
+    display: grid;
+    gap: 30px;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgb(220, 220, 220);
+    background-image: url(./img/nature1.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card4 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgb(220, 220, 220);
+    background-image: url(./img/nature2.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card5 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgb(220, 220, 220);
+    background-image: url(./img/nature3.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card6 {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 4px rgb(220, 220, 220);
+    background-image: url(./img/nature4.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.cardShadow {
+    box-shadow: 1px 1px 4px rgb(220, 220, 220);
+}
+
+.text > h3 {
+    margin-left: 20px;
+}
+
+.mapFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.mapFlex > p > i, span {
+    color: rgb(95, 43, 227);
+}
+
+.mapFlex > p > i {
+    padding-right: 5px;
+}
+
+.tours > p {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(95, 43, 227);
+    padding: 30px 0 60px 0;
+}
+
+.bg {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 150px;
+    background-color: rgb(95, 43, 227);
+    margin-top: 10px;
+}
+
+.bg > p{
+    margin: 5px;
+}
+
+.ilgis {
+    width: 175px;
+}
+
+.gallery {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+
+.nature {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.picture1 {
+    width: auto;
+    height: 350px;
+    background-image: url(./img/nature1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picture2 {
+    width: auto;
+    height: 350px;
+    background-image: url(./img/nature2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture3 {
+    width: auto;
+    height: 350px;
+    background-image: url(./img/nature3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.picture4 {
+    width: auto;
+    height: 350px;
+    background-image: url(./img/nature4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery > h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    font-weight: 500;
+}
+
+.gallery > h1 > span {
+    color: rgb(95, 43, 227)
+}
+
+.CTA {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(95, 43, 227);
+
+}
+
+.CTA >h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form > .wrapper input {
+    padding: 5px 10px;
+    color: black;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper button {
+    border: none;
+    padding: 7px 9px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+footer {
+    background-color: rgb(28, 28, 28);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.footerList {
+    list-style-type: none;
+    padding: 60px 0 30px 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon2 {
+    display: flex;
+    gap: 15px;
+    color: rgb(95, 43, 227);
+}
+
+.footerMenu > p {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+
+
+@media (min-width: 900px) {
+    .navbar2 {
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .navbar > h1 {
+        margin-left: 0;
+    }
+
+    .heropart {
+        background-image: linear-gradient(rgb(95, 43, 227), rgba(0, 0, 0, 0.482)), url(./img/mountain.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .heropart > h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .nature {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .picture1 {
+        height: 200px;
+    }
+
+    .picture2 {
+        height: 200px;
+    }
+
+    .picture3 {
+        height: 200px;
+    }
+
+    .picture4 {
+        height: 200px;
+    }
+
+    .form > .wrapper input {
+        padding: 5px 170px 5px 5px;
+        color: black;
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ourServiceGrid {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 1fr;
+        margin-top: 40px;
+        gap: 1px;
+        justify-content: center;
+    }
+
+    .ourService {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(236, 236, 236, 0.505);
+        height: 400px;
+    }
+
+    .toursGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 60px 30px;
+        justify-content: center;
+    }
+
+    .explore> h2 {
+        font-weight: 400;
+    }
+    
+    .explore > p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .border {
+        display: flex;
+        border: 5px solid rgb(62, 27, 191);
+        height: 250px;
+        width: 400px;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .aboutUsImg {
+        position: relative;
+        width: 400px;
+        background-image: url(./img/About\ us.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        bottom: 240px;
+        left: 20px;
+    }
+
+    .explore {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .aboutUs {
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-template-rows: 300px; 
+        align-items: stretch;
+        justify-items: center;
+    }
+
+    .border2 {
+        height: 250px;
+    }
+    
+    .about {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 400px;
+    }
+
+    .explore> h2 {
+        padding-left: 15px;
+        font-weight: 400;
+    }
+    
+    .explore > p {
+        padding-left: 15px;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+}

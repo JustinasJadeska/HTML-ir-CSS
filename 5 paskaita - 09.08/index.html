@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Paskaita</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <header></header>
+
+    <main>
+        <section><!--Lentelės-->
+            <h1>Lentelės</h1>
+            <ul>
+                <li>table</li>
+                <li>thead</li>
+                <li>tbody</li>
+                <li>tfoot</li>
+                <li>tr - table row</li>
+                <li>th - table heading</li>
+                <li>td - table data</li>
+            </ul>
+            <p></p>
+            <table class="saldainiai">
+                <caption>Pavyzdinė lentelė (saldainiai)</caption>
+                <thead>
+                    <tr>
+                        <th>Pavadinimas</th>
+                        <th>Skonis</th>
+                        <th>Kaina/kg</th>
+                        <th>Patinka/Nepatinka</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Karvutė</td>
+                        <td>Skysta karamelė</td>
+                        <td>17 pinigų</td>
+                        <td>Patinka</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Drops</td>
+                        <td>Kieta karamelė</td>
+                        <td>5 pinigai</td>
+                        <td>Nepatinka</td>
+                    </tr>
+                    <tr>
+                        <td>Karūna</td>
+                        <td>Šokoladinis vafliukas</td>
+                        <td>7 pinigai</td>
+                        <td>Patinka</td>
+                    </tr>
+                    <tr>
+                        <td>Dobiliukas</td>
+                        <td>Anyžiniai</td>
+                        <td>5 pinigai</td>
+                        <td>Nepatinka</td>
+                    </tr>
+                    <tr>
+                        <td>Nomeda</td>
+                        <td>Vaflinis su kažkuo</td>
+                        <td>12 pinigų</td>
+                        <td>Patinka</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Kainos vidurkis:</td>
+                        <td colspan="2">9.2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section><!--Formos-->
+            <h1>Formos</h1>
+            <h3>Tags</h3>
+            <ul>
+                <li>form - pagrindinis formos tag'as</li>
+                <li>input - įvesties laukas</li>
+                <li>textarea - didesnis teksto kiekio įvesties laukas</li>
+                <li>select - tėvinis elementas option tag'ui</li>
+                <li>option - pasirinkimo variantas</li>
+                <li>label - etiketė įvesties laukui</li>
+            </ul>
+            <h3>Attributes</h3>
+            <ul>
+                <li>for - sujugnia 'label' su įvesties lauku
+                    turinčiu tokią ID reikšmę, kaip label'io for'as</li>
+                <li>id - formose skirtas sujungti įvesties laukus su label'iu</li>
+                <li>name - nurodo įvesties lauko vardą (naudinga JS)</li>
+                <li>type -nurodo įvesties lauko tipą
+                    <ul>
+                        <li>button</li>
+                        <li>checkbox</li>
+                        <li>radio</li>
+                        <li>color</li>
+                        <li>date</li>
+                        <li>datetime - laiko pasirinkimas (mėnesis diena metai valanda minutė)</li>
+                        <li>email</li>
+                        <li>time</li>
+                        <li>file</li>
+                        <li>submit</li>
+                        <li>number</li>
+                        <li>password</li>
+                        <li>text</li>
+                        <li>range</li>
+                        <li>search</li>
+                        <li>reset</li>
+                        <li>tel</li>
+                        <li>url</li>
+                    </ul>
+                </li>
+                <li>placeholder</li>
+                <li>cols</li>
+                <li>rows</li>
+                <li>value - input'o reikšmė perduodama JS'ui</li>
+                <li>selected</li>
+                <li>disabled</li>
+            </ul>
+            <form>
+                <div>
+                    <label for="vardas">Įveskite savo vardą:</label>
+                    <input type="text" id="vardas">
+                </div><br>
+                <div>
+                    <label for="pavarde">Įveskite savo pavardę:</label>
+                    <input type="text" id="pavarde">
+                </div>
+                <div>
+                    <label for="komentaras">Palikite komentarą:</label><br>
+                    <textarea name="komentaras" id="komentaras" cols="30" rows="10" placeholder="Palik komentarą..."></textarea>
+                </div>
+                <div>
+                    <label for="filmas">Pasirinkite filmą:</label>
+                    <select name="filmas" id="filmas">
+                        <option value="0">Avatar</option>
+                        <option value="1">Harry Potter</option>
+                        <option selected value="2">Lord of the rings</option>
+                        <option disabled value="3">Fast and Furious</option>
+                    </select>
+                </div>
+                <input type="submit" value="Submit Form">
+            </form>
+        </section>
+        <section><!--Kortelės-->
+            <h1>Kortelės</h1>
+            <div class="korteles">
+                <div class="profilio">
+                    <h1>Vardas Pavardė</h1>
+                    <img src="https://i.pinimg.com/564x/74/d7/b0/74d7b05c3476e062ca7c26452ffb22cb.jpg" alt="profile picture">
+                    <p>Mokytojas</p>
+                    <div class="kontaktai">
+                        <p>Telefonas</p>
+                        <p>El.paštas</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/" class="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.facebook.com/" class="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.facebook.com/" class="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="infoCard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg" alt="nature image">
+                <div class="info">
+                    <h1>Pavadinimas</h1>
+                    <h4>Vieta</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Obcaecati numquam in eum ab praesentium nulla
+                        repudiandae esse est nostrum officia minima ad
+                        quibusdam laudantium aut deserunt
+                        quod ex, aliquid officiis!
+                    </p>
+                </div>
+                </div>
+                <div class="coolCard">
+                    <div class="info">
+                        <h1>Cool Card</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Obcaecati numquam in eum ab praesentium nulla
+                            repudiandae esse est nostrum officia minima ad
+                            quibusdam laudantium aut deserunt
+                            quod ex, aliquid officiis!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>

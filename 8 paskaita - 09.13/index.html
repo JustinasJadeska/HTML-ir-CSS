@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8 paskaita</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section> <!--Grid-->
+            <h1>Grid</h1>
+            <ul>
+                <li>Parent (container)
+                    <ul>
+                        <li>display:grid/inline-grid</li>
+                        <li>grid-template-columns/rows: unit/s - 
+                            nurodai kiek ir kokio dydžio stulpelių/eilučių nori
+                            savo kuriamame tinklelyje </li>
+                        <li>grid-template: grid-template-rows / 
+                            grid-template-columns </li>
+                        <li>grid-template-areas: "name|nameOtherOrSame|more|..." 
+                            "kitaEilute|.|none|..." - </li>
+                        <li>column-gap/row-gap - nurodo tarpus tarp 
+                            tinklelio stulpelių arba eilučių </li>
+                        <li>gap: row-gap column-gap/</li>
+                        <li>justify-items: eina antras</li>
+                        <li>align-items: eina pirmas</li>
+                        <li>place-items: align-items justify-items - junginys</li>
+                        <li>justify-content:...; X ašyje</li>
+                        <li>align-content:...; nusako kaip visas tinklelis 
+                        išsidėsto konteinerio viduje Y ašyje </li>
+                        <li>place-content: align-content justify-content</li>
+                        <li>grid-auto-rows:</li>
+                        <li>grid-auto-columns:</li>
+                        <li>grid-auto-flow: row/column/dense/row dense/column dense -
+                            nusako kaip elementai išsidėsto jeigu jiems nėra priskirtos vietos </li>
+                        <li>grid: grid-template-rows / grid-template-columns 
+                            / grid-template-areas / grid-auto-rows / 
+                            grid-auto-columns / grid-auto-flow; </li>
+                    </ul>
+                </li>
+                <li>Child (elements in container)
+                    <ul>
+                        <li>grid-column-start: number;</li>
+                        <li>grid-column-end: number/spanNumber;</li>
+                        <li>grid-row-start: number</li>
+                        <li>grid-row-end: number/spanNumber;</li>
+                        <li>grid-row: grid-row-start grid-row-end;</li>
+                        <li>grid-column: grid-column-start grid-column-end</li>
+                        <li>grid-area: grid-row-start / grid-column-start /
+                            grid-row-end / grid-column-end</li>
+                        <li>justify-self:</li>
+                        <li>align-self:</li>
+                        <li>place-self: align-self justify-self;</li>
+                    </ul>
+                </li>
+                <li>Units and Functions
+                    <ul>
+                        <li>fr - frakcija, nurodo kokią dalį pločio/aukščio 
+                            turi priskirti </li>
+                        <li>repeat(kartai, kiekis) - nurodo kiek kartų kartoti 
+                            tam tikrą kiekio nurodymą </li>
+                        <li>minmax(min kiekį, max kiekį) - nurodo kiek vietos 
+                            tinklelio (grid) eilutė ar stulpelis gali užimti</li>
+                        <li>fit-content()</li>
+                        <li>min()</li>
+                        <li>max()</li>
+                        <li>masonry</li>
+                        <li>subgrid</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </section>
+        <section id="pvz">
+            <h1>Grid example</h1>
+            <div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+    
+</body>
+</html>

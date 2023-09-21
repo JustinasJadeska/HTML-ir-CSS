@@ -1,0 +1,25 @@
+section#pvz > div {
+    height: 500px;
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr;
+    gap: 3px 5px;
+}
+
+section#pvz > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    background-color: rgb(150, 40, 234);
+    border: 3px solid black;
+    color: white;
+}
+
+section#pvz > div > div:nth-child(1) {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+section#pvz > div > div:nth-child(3) {
+    grid-area: 1 / 3 / 4 / 4;
+}

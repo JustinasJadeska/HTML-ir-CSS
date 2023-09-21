@@ -1,0 +1,109 @@
+.boxModel {
+    display: inline-block;
+    border: 1px solid black;
+
+/* padding */
+padding: 10px;
+
+/* margin */
+margin: 50px 0 20px 100px;
+
+/* border */
+border-width: 3px;
+border-style: dashed;
+border-color: rgb(181, 15, 227);
+border-radius: 10px;
+}
+
+section > ul {
+    color: red;
+}
+
+.textColorBlue {
+    color: rgb(35, 101, 200);
+}
+
+h1.textColorBlue {
+    text-align: center;
+}
+
+p, div li {
+    background-color: aquamarine;
+}
+
+.this + li {
+    color: green;
+}
+
+p:hover {
+    color: white;
+    background-color: black;
+}
+
+.idomu {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.idomu > p{
+    display: none;
+}
+
+.idomu:hover > p {
+    display: initial;
+}
+
+#background1 > div {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+
+.background {
+    background-color: rgb(226, 43, 220);
+}
+
+.background2 {
+    background-image: url('./Images/Hello.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background3 {
+    background-image: url('./Images/Hello.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.background4 {
+    background-image: url('./Images/Hello.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.background4 > div.transparentBG{
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-color: rgba(250, 235, 215, 0.491);
+}
+
+.background4 > div.content {
+    position: relative;
+    z-index: 1;
+}
+
+.background5 {
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 251, 0),
+        rgb(59, 235, 46)
+    );
+}

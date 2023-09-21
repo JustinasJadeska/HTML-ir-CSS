@@ -1,0 +1,56 @@
+.explore> h2 {
+    font-weight: 400;
+}
+
+.explore > p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutUs {
+    display: grid;
+    grid-template-columns: 350px 450px;
+    grid-template-rows: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.about {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.explore> h2 {
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.explore > p {
+    padding-left: 15px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.border {
+    border: 5px solid rgb(62, 27, 191);
+    height: 250px;
+    width: 300px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.img {
+    position: relative;
+    background-image: url(./img/mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 300px;
+}

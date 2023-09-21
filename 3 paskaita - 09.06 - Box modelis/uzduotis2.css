@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(215, 215, 215);
+   
+}
+
+.container {
+    display: block;
+    background-color: white;
+    height: 300px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container a {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px 16px;
+}
+
+.logo {
+    background-position: center;
+    max-width: 250px;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    margin-top: -70px;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container2 {
+    display: block;
+    background-color: white;
+    height: 820px;
+    border-radius: 3px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0%;
+}
+
+.image {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.container3 {
+    display: block;
+    background-color: white;
+    margin-top: 20px;
+    height: 1050px;
+    border-radius: 3px;
+}
+
+.mesa {
+    width: 200px;
+    height: 200px;
+    margin-left: 350px;
+
+}
+
+.kaina {
+    display: block;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.container4 {
+    display: block;
+    background-color: white;
+    margin-top: 20px;
+    height: 670px;
+    border-radius: 3px;
+}
+
+ul {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+.map {
+    width: 800px;
+    height: 500px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}

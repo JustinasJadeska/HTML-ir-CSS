@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS įvadas</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+            margin: 10px;
+            height: 7000px;
+        }
+
+        p {
+            color: blueviolet;
+        }
+    </style>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div> <!--CSS rašymo būdai-->
+        <h1>CSS parašymo būdai</h1>
+        <ul>
+            <li>inline - rašomas elemento viduje</li>
+            <li>internal - rašomas HTML'e</li>
+            <li>external - rašoma atskirame faile, kuris turi būti prijungtas</li>
+        </ul>
+        <div>
+            <div>
+                <h2>Inline</h2>
+                <p class="didelisTekstas">Tag'o atidaromoje dalyje naudojamas atributas "style", kuriame priskiriamia
+                    linijiniai stiliai.</p>
+                <p style="color: red; font-size: 34px;">Pavyzdys</p>
+            </div>
+            <div>
+                <h2>Internal</h2>
+                <p>Head tagp'o viduje rašomas style tag'as, kurio viduje galima parašyti CSS
+                    stilius su tvarkinga/pilna CSS sintakse: selektorius + ribos + stiliai</p>
+                <p>Pavyzdys</p>
+            </div>
+            <div>
+                <h2>External</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div> <!--CSS Selektoriai-->
+        <h1 id="text">CSS Selektoriai</h1>
+        <ul>
+            <li class="raudonasTekstas">Element - nurodomas tag'o pavadinimas</li>
+            <li class="melynasTekstas">CLASS - klasė sukuriama parašant tašką ir pavadinimą be tarpų.</li>
+            <li class="didelisTekstas">ID - HTML ID gali būti priskirtas elementui, kaip atributas.
+                CSS ID sukuriamas parašant grotelių simbolį(#). Pvadinimas turi būti vienas žodis.</li>
+        </ul>
+    </div>
+    <div> <!--Pavadinimų kūrimas-->
+        <h1>Pavadinimų kūrimas</h1>
+        <ul>
+            <li>camelCase - sekantys žodžiai rašomi iš didžiosios raidės.</li>
+            <li>snake_case - sekantys žodžiai rašomi už apatinio brūkšnelio.</li>
+            <li>kebab-case - sekantys žodžiai rašomi už minuso ženklo.</li>
+        </ul>
+    </div>
+    <dvi> <!--Stilių testavimas-->
+        <h1 class="class1">Stilių testavimas</h1>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit.</p>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </dvi>
+    <div><!--Display-->
+        <h1>Displays</h1>
+        <ul>
+            <li>Inline - Linijinis</li>
+            <li>Block - Blokinis</li>
+            <li>Inline-Block - Linijinis-Blokinis</li>
+        </ul>
+    <div> <!--Inline-->
+            <h1>Inline</h1>
+            <p>
+                Elementai gali išsidėstyti vienas
+                šalia kito, nes jie užima tik tiek vietos
+                kiek reikalauja jų viduje esantis turinys.
+                Elementams negalima priskirti
+                pločio ir aukščio nustatymų.
+            </p>
+            <div class="inline">1</div>
+            <div class="inline">2</div>
+            <div class="inline">3</div>
+        </div>
+        <div> <!--Block-->
+            <h1>Block</h1>
+            <p>
+             Elementai negali išsidėstyti vienas
+             šalia kito. Galima priskirti aukščio ir
+             pločio nustatymus.
+            </p>
+            <div class="block">1</div>
+            <div class="block">2</div>
+            <div class="block">3</div>
+        </div>
+        <div> <!--Inline-Block-->
+            <h1>Inline-Block</h1>
+            <p>
+             Elementams galima priskirti pločio
+             ir aukščio nustatymus. Elementai 
+             išsidėsto vienas šalia kito.
+            </p>
+            <div class="inlineBlock">1</div>
+            <div class="inlineBlock">2</div>
+            <div class="inlineBlock">3</div>
+        </div>
+    <div> <!--Vėliavos-->
+            <h1>Vėliavos</h1>
+            <div class="inlineBlock flagBorder">
+                <div class="LTU_flagParts yellowBG"></div>
+                <div class="LTU_flagParts greenBG"></div>
+                <div class="LTU_flagParts redBG"></div>
+            </div>
+            <div class="inlineBlock flagBorder">
+            <div class="LTU_flagParts carminRed"></div>
+            <div class="LTU_flagParts whiteBG"></div>
+            <div class="LTU_flagParts carminRed"></div>
+            </div>
+            <div class="inlineBlock flagBorder">
+                <div class="LTU_flagParts blueBG"></div>
+                <div class="LTU_flagParts blackBG"></div>
+                <div class="LTU_flagParts whiteBG"></div>
+            </div>
+            <div class="inlineBlock flagBorder">
+            <div class="ITA_FlagParts greenBG"></div>
+            <div class="ITA_FlagParts whiteBG"></div>
+            <div class="ITA_FlagParts redBG"></div>
+            </div>
+        </div>
+    </div>
+    <div><!--Spalvos-->
+        <h1>Spalvos</h1>
+        <ul>
+            <li>RGB</li>
+            <li>RGBA</li>
+            <li>HEX</li>
+            <li>HSL</li>
+            <li>HWB</li>
+        </ul>
+    </div>
+    <div><!--Pozicijos-->
+        <h1>Pozicijos</h1>
+        <ul>
+            <li>Static</li>
+            <li>Relative</li>
+            <li>Absolute</li>
+            <li>Fixed</li>
+            <li>Sticky</li>
+        </ul>
+        <div><!--Static-->
+            <h2>Static</h2>
+            <p></p>
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock relative">2</div>
+            <div class="box inlineBlock static">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        <div>
+            <h2>Relative</h2>
+            <p></p>
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock relative left bottom">2</div>
+            <div class="box inlineBlock static">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        <div>
+            <h2>Absolute</h2>
+            <p></p>
+        <div class="relative">
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock relative">2</div>
+            <div class="box inlineBlock absolute top">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        </div>
+        <div>
+            <h2>Fixed</h2>
+            <p></p>
+        <div class="relative">
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock relative">2</div>
+            <div class="box inlineBlock fixed top">3</div>
+            <div class="box inlineBlock static">4</div>
+        </div>
+        </div>
+        <div>
+            <h2>Sticky</h2>
+            <p></p>
+            <div style="border: 2px solid black; height: 1000px;">
+            <div class="box inlineBlock static">1</div>
+            <div class="box inlineBlock static">2</div>
+            <div class="box inlineBlock static">3</div>
+            <div class="box inlineBlock sticky top">4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

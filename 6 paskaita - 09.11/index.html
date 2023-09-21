@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Paskaita</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <header></header>
+        <nav></nav>
+
+    <main></main>
+        <section> <!--Selektoriai-->
+            <h1>Selektoriai</h1>
+            <ul>
+                <li>Atributų slektoriai
+                    <ul>
+                        <li>[atributas] - parenkami visi tag'ai turintys nurodytą atributą</li>
+                        <li>[atributas="reiksme"] - parenkami visi tag'ai turintys nurodyta 
+                            atributa su nurodyta reiksme </li>
+                        <li>[atributas~="... reiksme ..."] - parenka visus tag'us turinciu nurodyta atributa 
+                            kurio reiksmeje yra nurodyta reiskme</li>
+                        <li>[atributas|="reiksme"] - parenka visus tag'us turinciu nurodyta atributa 
+                            kurio reiksme yra "reiksme" arba "reiksme-" </li>
+                        <li>[atributas^="reiksme..."] - parenka visus tag'us turinciu nurodyta atributa, 
+                            kurio reiksmes pradzioje yra "reiksme" </li>
+                        <li>[atributas$="...reiksme"] - parenka visus tag'us turinciu nurodyta atributa, 
+                            kurio reiksme gale yra "reiksme" </li>
+                        <li>[atributas*="...reiksme..."] - parenka visus tag'us turinciu nurodyta atributa, 
+                            kurio reiksmeje yra simboliu seka "reiksme" </li>
+                    </ul>
+                </li>
+                <li>Pseudo elementai (Pseudo elements)
+                    <ul>
+                    <li>element::before - įterpia turinį prieš elementą</li>
+                    <li>element::after - įterpia turinį už elemento</li>
+                    <li>element::first-letter - parenka pirmąją elemento raidę</li>
+                    <li>element::first-line - parenka pirmąją elemento eilutę</li>
+                    <li>element::first-letter - parenka pirmąją elemento raidę</li>
+                    <li>element::first-line - parenka pirmąją elemento eilutę</li>
+                    <li>li::marker - parenka sąrašo elemento žymę</li>
+                    <li>element::placeholder - parenka input'o arba textarea tag'ų pavyzdinį tekstą (placeholder)</li>
+                    <li>element::selection - parenka elemento pažymėtą dalį</li>
+                    </ul>
+                </li>
+                <li>Pseudo klasės (Pseudo class) FORMOMS
+                    <ul>
+                    <li>input:checked - parenkami pažymėti checkbox'ai</li>
+                    <li>input:default - parenka iš anksto parinktą pasirinkimą </li>
+                    <li>input:disabled - parenka tuos formos elementus, kurie turi atributą 
+                        "disabled" </li>
+                    <li>input:enabled - parenka tuos frmors elementus, kurie neturi atributo 
+                        "disabled"</li>
+                    <li>input:focus - parenka vieną elementą tuo momentu, kada 
+                        klaviatūros kursorius yra elemente</li>
+                    <li>input:in-range - parenka tą input'ą, kurio reikšmė yra nurodytose ribose</li>
+                    <li>input:out-of-range - parenka tą input'ą, kurio reikšmė yra už nurodytų ribų</li>
+                    <li>input:inderterminate - parenka input'ą su nenurodyta/nepažymėta reikšme</li>
+                    <li>input:valid - parenka input'ą, kurio reikšmė atitinka nurodymus</li>
+                    <li>input:invalid - parenka in[ut'ą  reikšmė neatitinka nurodymų</li>
+                    <li>input:optional - parenka tuos formos elementus, kurie neturi atributo "required"</li>
+                    <li>input:required - parenka tuos formos elementus, kurie turi atributą "required"</li>
+                    <li>input:read-only - parenka tuos formos elementus, kurie turi atributą "readonly"</li>
+                    <li>input:write-only - parenka tuos formos elementus, kurie neturi atributo "readonly"</li>
+                    </ul>
+                </li>
+                <li>Likusios pseudo klasės (Pseudo class)
+                    <ul>
+                        <li>a:link - paprasta nelankyta nuorod</li>
+                        <li>a:visited - lankyta nuoroda</li>
+                        <li>element:hover - pekės kursorius ant elemento</li>
+                        <li>a:active - aktyvi nuoroda (paspaudimo momentas)</li>
+                        <li>element:empty - tuščių elementų selektorius</li>
+                        <li>element:not(selector) - parenka visus elementus, kurie nėra 
+                            nurodyti skliaustelių viduje </li>
+                        <li>element:lang(kalba) - parenka visus elementus, kurie turi 
+                            nurodytą kalbą</li>
+                        <li>#idName:target - parenka tą id elementą į, kurė nusikėlei 
+                            navigacijos pagalba</li>
+                        <li>:root - skirtas nustatyti svetainės pagrindiniams stiliams arba 
+                            kurti CSS kintamuosius </li>
+                        <li>:first-child - parenka pirmąjį vaikinį elementą</li>
+                        <li>:last-child - parenka paskutinįjį vaikinį elementą</li>
+                        <li>:only-child - parenka vaikinį elementą jeigu jis yra 
+                            vienintelis vaikinis elementas </li>
+                        <li>:first-of-type - parenka pirmuosius savo tipo elementus sąraše</li>
+                        <li>:last-of-type - parenka paskutiniuosius savo tipo elementus sąraše</li>
+                        <li>:only-of-type - parenka vienintelius savo tipo elementus sąraše</li>
+                        <li>:nth-child(n) - išskaičiuoja ir parenka kas kažkelintą vaikinį elementą 
+                            sąraše nuo pradžios </li>
+                        <li>:nth-last-child(n) - išskaičiuoja ir parenka kas kažkelintą vaikinį elementą 
+                            sąraše nuo galo </li>
+                        <li>:nth-of-type(n) - išskaičiuoja ir parenka kas kažkelintus skirtingų tipų elementus 
+                            sąraše nuo pradžios </li>
+                        <li>:nth-last-of-type(n) - išskaičiuoja ir parenka kas kažkelintus skirtingų tipų elementus 
+                            sąraše nuo galo</li>
+                        <li>
+                            <ul>
+                                <li>n - nurodo kažkelintą elementą</li>
+                                <li>xn - nurodo kas x'tąjį elementą</li>
+                                <li>xn+y - nurodo kas x'tąjį elementą, nuo y'tojo elemento</li>
+                                <li>even === 2n (lyginis)</li>
+                                <li>odd === 2n+1 (nelyginis)</li>
+                            </ul>
+                        </li>
+                        <li>:is()</li>
+                        <li>:where()</li>
+                        <li>:has()</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section> <!--Transformacija-->
+            <h1>Transform</h1>
+            <p>Stilius, kuris transformuoja elementą
+                Transformuoti galima 3-5 būdais. 
+            </p>
+            <ul>
+                <li>Rotate
+                    <ul>
+                        <li>rotate(deg) - same as rotateZ</li>
+                        <li>rotateX(deg) - sukasi aplink X ašį</li>
+                        <li>rotateY(deg) - sukasi aplink Y ašį</li>
+                        <li>rotateZ(deg) - sukasi aplink Z ašį</li>
+                        <li>rotate3d(deg)</li>
+                    </ul>
+                </li>
+                <li>Translate
+                    <ul>
+                        <li>translate(Xpx, Zpx) - pastumia elementą X ir Z ašyje</li>
+                        <li>translateX(px) - pastumia elementą kažkur x'o ašyje 
+                            per nurodytą kiekį pixelių ( x ašyje 
+                            dešinė didėja, kairė mažėja) </li>
+                        <li>translateY(px) - pastumia elementą kažkur y'o ašyje 
+                            per nurodytą kiekį pixelių (y ašyje į viršų
+                            mažėja, į apačią didėja) </li>
+                        <li>translateZ(px) - pastumia elementa kažkur z ašyje 
+                            per nuordytą kiekį pixelių (z ašyje tolyn
+                            didėja, artyn mažėja) </li>
+                        <li>translate3d(px)</li>
+                    </ul>
+                </li>
+                <li>Scale
+                    <ul>
+                        <li>scaleX(kartų) - tempia elementą X ašyje</li>
+                        <li>scaleY(kartų) - tempia elementą Y ašyje</li>
+                        <li>scaleZ(kartų) - tempia elementa Z ašyje</li>
+                        <li>scale(kartųX, kartšY) - tempia elementą X ir Y ašyse</li>
+                        <li>scale3d(kartų)</li>
+                    </ul>
+                </li>
+                <li>Skew
+                    <ul>
+                        <li>skwe(degX, degY)</li>
+                        <li>skweX(deg)</li>
+                        <li>skweY(deg)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section> <!--Transition-->
+            <h1>Transition</h1>
+            <p>
+                Transicija aprašo elemento kitimo nustatymus.
+            </p>
+            <ul>
+                <li>transition-duration - nurodo per kiek laiko turi 
+                    įvykti elemento pasikeitimas</li>
+                <li>transition-delay - nurodo kiek laiko pasikeitimas 
+                    turi uždelsti </li>
+                <li>transition-property - nurodo kokios savybės keičiasi 
+                    pagal pasikeitimų nustatymus </li>
+                <li>transition-timing-function - nurodo kaip bus paskirtstyas laikas vykdyti pasikeitimus
+                    <ul>
+                        <li>ease</li>
+                        <li>ease-in</li>
+                        <li>ease-out</li>
+                        <li>ease-in-out</li>
+                        <li>linear</li>
+                        <li>cubic-bezier(n, n, n, n)</li>
+                    </ul>
+                </li>
+                <li>transition - nurodo visus pasikeitimš stilius 
+                    bet kokia eilės tvarka, apart 'duration' turi  
+                    eiti prieš 'delay' </li>
+            </ul>
+        </section>
+        <section> <!--Animation-->
+            <h1>Animation</h1>
+            <ul>
+                <li>animation-name - jūsų sugalvotas pavadinimas šiai 
+                    animacijai </li>
+                <li>animation-duration - animacijos trukmė</li>
+                <li>animation-delay - animacijos uždelsimas</li>
+                <li>animation-iteration-count - animacijos kartojimo kiekis</li>
+                <li>animation-direction - nurodo animacijos kryptį
+                    <ul>
+                        <li>normal - animacija juda iš A į B į C... ir gale 
+                            teleportuojasi atgal į A </li>
+                        <li>reverse - animacija juda nuo galo į pradžią ir 
+                            pasiekus pradžią teleportuojasi į galą </li>
+                        <li>alternate - animacija juda nuo pradžios į galą 
+                            ir pasiekus galą juda nuo galo į pradžią </li>
+                        <li>alternate-reverse - animacija juda nuo galo į pradžią 
+                            ir pasiekus pradžią juda atgal į galą </li>
+                    </ul>
+                <li>animation-play-state - animacijos vykdymo būsena</li>
+                <li>animation-timing-function</li>
+                <li>animation-fill-mode - nurodo ką naimuojamam elementui 
+                    daryti pasibaigus animacijai </li>
+                <li>animation-composition - </li>
+                <li>animation - visų nustatymų apjungimas</li>
+                </li>
+            </ul>
+            <h3>Animation keyframes</h3>
+            <p>
+
+            </p>
+            <div class="anim"></div>
+        </section>
+
+    <footer></footer>
+    
+</body>
+</html>

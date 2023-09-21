@@ -1,0 +1,110 @@
+h1, h2 {
+    text-align: center;
+}
+
+.raudonasTekstas {
+    color: red;
+}
+
+.melynasTekstas {
+    color: blue;
+}
+
+.didelisTekstas {
+    font-size: 32px;
+}
+
+#text {
+    color: aqua;
+}
+
+.class1 {
+    text-decoration: underline;
+}
+
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.flagBorder {
+    border: 2px solid black;
+    font-size: 0px;
+}
+
+.yellowBG {
+    background-color: yellow;
+}
+
+.greenBG {
+    background-color: green;
+}
+
+.redBG {
+    background-color: red;
+}
+
+.LTU_flagParts {
+    width: 450px;
+    height: 100px;
+}
+
+.carminRed {
+    background-color: brown;
+}
+
+.whiteBG {
+    background-color: rgb(255, 255, 255);
+}
+
+.blueBG {
+    background-color: blue;
+}
+
+.blackBG {
+    background-color: black;
+}
+
+.ITA_FlagParts {
+    width: 166px;
+    height: 300px;
+    display: inline-block;
+}
+
+.static {
+    position: static;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.realtive {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.top {
+    top: 100px;
+}
+
+.sticky {
+    position: sticky;
+}
+

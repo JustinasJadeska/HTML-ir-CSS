@@ -1,0 +1,61 @@
+.container > div {
+    height: 650px;
+    background-color: black;
+    color: aqua;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.container > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.one {
+    border: 1px solid blue;
+}
+
+.two {
+    border: 1px solid blue;
+}
+
+.three {
+    border: 1px solid blue;
+}
+
+.four {
+    border: 1px solid blue;
+}
+
+.five {
+    grid-area: 2 / 1 / 2 / 4;
+    border: 1px solid rgb(179, 20, 236);
+}
+
+.six {
+    grid-area: 2 / 4 / 5 / 5;
+    border: 1px solid rgb(179, 20, 236);
+}
+
+.seven {
+    grid-area: 5 / 2 / 5 / 5;
+    border: 1px solid rgb(179, 20, 236);
+}
+
+.eight {
+    grid-area: 6 / 1 / 4 / 2;
+    border: 1px solid rgb(179, 20, 236);
+}
+
+.nine {
+    grid-area: 3 / 1 / 3 / 3;
+    border: 1px solid rgb(179, 20, 236);
+}
+
+.ten {
+    grid-area: 3 / 3 / 5 / 3;
+    border: 1px solid rgb(179, 20, 236);
+}

@@ -1,0 +1,42 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+body {
+    background-image: linear-gradient(purple, pink);
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    padding-left: 20px;
+}
+
+div {
+    border: 3px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.anim{
+    animation-name: bandymas;
+    animation-duration: 5s;
+    animation-delay: 100ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+}
+
+@keyframes bandymas {
+    0% {
+        background-color: rgb(255, 60, 60);
+    } 10% {
+        background-color: blueviolet;
+    } 90% {
+
+    }100% {
+        background-color: white; 
+    }
+}

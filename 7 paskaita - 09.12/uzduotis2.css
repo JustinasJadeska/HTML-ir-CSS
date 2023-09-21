@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(197, 157, 12);
+}
+
+footer > p {
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: white;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+header > nav {
+    border: 1px solid rgb(202, 202, 202);
+    background-color: rgb(202, 202, 202);
+}
+
+header > nav > ul {
+    list-style-type: none;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+header > nav a {
+    text-decoration: none;
+    font-weight: 800;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    padding: 10px 70px;
+    color: rgb(197, 157, 12);
+}
+
+.container {
+    height: 575px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgb(164, 164, 164);
+    margin-top: 25px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.card-1 {
+    background-image: url(./img/unicorn1.PNG);
+}
+
+.card-2 {
+    background-image: url(./img/unicorn2.PNG);
+}
+
+.card-3 {
+    background-image: url(./img/unicorn3.PNG);
+}
+
+.card > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 100px;
+}

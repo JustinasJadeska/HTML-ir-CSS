@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Paskaita</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#Semantic">Semantics</a>
+            <a href="#BoxModel">Box model</a>
+            <a href="#Selectors">Selectors</a>
+            <a href="#background1">Background</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Semantic"> <!--Semantics and page layout-->
+            <h1>Semantics and page layouts</h1>
+            <p>
+                Kuriant internetinę svetainę arba
+                aplikaciją, reikėtų naudoti semantinius
+                tag'us, tam, kad būtų tvarkinga
+                puslapio struktūra ir joje programuojant
+                būtų lengviau susigaudyti.
+            </p>
+            <ul>
+                <li>Header</li>
+                <li>Nav</li>
+                <li>Main</li>
+                <li>Section</li>
+                <li>Article</li>
+                <li>Figure - skirats talpinti image, video, audio, map, gif, map
+                    iframe</li>
+                <li>Aside - šoninė juosta (dažnu atveju naudojamas
+                    papildomam menu).</li>
+                <li>Footer</li>
+            </ul>
+        </section>
+        <section id="BoxModel"> <!--Box model-->
+            <h1>Box model</h1>
+            <p>
+                Kiekvienas puslapio lelemntas turi savo
+                'box' modelį, kuris susideda iš žemiau išvardintų
+                dalių.
+            </p>
+            <ol>
+                <li>Content - Turinys</li>
+                <li>Padding - Pamušalas</li>
+                <li>Border - Rėmelis</li>
+                <li>Margin - Paraštės (atstumai iki kitų elementų)</li>
+                <li>Position - Pozicijų atitraukimai</li>
+            </ol>
+            <div class="boxModel">Box model example</div>
+            <div>
+                <div> <!--Padding-->
+                    <h2>Padding</h2>
+                    <p>
+                        Padding nustatymas nurodo per kokį
+                        atstumą turinys turi būti atitrauktas
+                        nuo rėmlio.
+                    </p>
+                    <ul>
+                        <li>padding: 5px; visiems</li>
+                        <li>padding-top: 5px;</li>
+                        <li>padding-right: 5px;</li>
+                        <li>padding-bottom: 5px;</li>
+                        <li>padding-left: 5px;</li>
+                        <li>padding: 5px 10 px;
+                            top and bottom, right and left.</li>
+                        <li>padding: 20px 10px 15px;
+                        <li>padding: 20px 10px 15px 20px;
+                            top, right, left, bottom.</li>
+                    </ul>
+                </div>
+                <div> <!--Margin-->
+                    <h2>Margin</h2>
+                    <p>
+                        Margin nustatymas nurodo per kokį atstumą 
+                        content+padding+border turi būti atitraukti
+                        nuo aplinkinių elementų.
+                    </p>
+                    <ul>
+                        <li>margin: 0 auto; centruoja block'ą,
+                            būtinai turi būti nustatytas, kad
+                            tai yra blokinis elementas, linijinamie
+                            neveikia (inline block).</li>
+                        <li>margin: 5px; visiems</li>
+                        <li>margin-top: 5px;</li>
+                        <li>margin-right: 5px;</li>
+                        <li>margin-bottom: 5px;</li>
+                        <li>margin-left: 5px;</li>
+                        <li>margin: 5px 10 px;
+                            top and bottom, right and left.</li>
+                        <li>margin: 20px 10px 15px;
+                        <li>margin: 20px 10px 15px 20px;
+                            top, right, left, bottom.</li> 
+                    </ul>
+                </div>
+                <div> <!--Border-->
+                    <h2>Border</h2>
+                    <p>
+                        Rėmelis (border) yra kažkokio tipo, storio ir spalvos juosta 
+                        skirianti margin ir padding.
+                    </p>
+                    <ul>
+                        <li>border: line-width, line type, 
+                            line-color </li>
+                        <li>border-top-width: 10px;</li>
+                        <li>border-width: 10px;</li>
+                        <li>border-style: none / hidden / solid / double /
+                            dotted / dashed / inset / outsed /
+                            groove / ridge;</li>
+                        <li>border-right-style: ;</li>
+                        <li>border-color: red;</li>
+                        <li>border-bottom-color: black;</li>
+                        <li>border-radius: px / %;</li>
+                        <li>border-top-right-radius: px / %;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="Selectors"> <!--Selectors-->
+            <h1 class="textColorBlue">Selectors</h1>
+            <ul class="selectorsList">
+                <li>Element/Tag</li>
+                <li>CLass</li>
+                <li class="textColorBlue">ID</li>
+                <li>* - viskas</li>
+                <li>element1 element2 - elementas2 esantis
+                    elemento1 viduje, nesvarbu kaip toli </li>
+                <li class="textColorBlue">element1 > element2 - elementas 2 esanti 
+                    vaikinis elementas elemento1 </li>
+                <li>element.className - elementas turintis klasę 
+                    pavadinimu className </li>
+                <li>element#idName - elementas turintis ID 
+                    pavadinimu idName</li>
+                <li>selector, selector - keletas selektorių 
+                    su vienodais stiliais </li>
+                    <li class="this">element1 + element2 - tame pačiame 
+                        lygmenyje iš karto už element1 einantis element2</li>
+                    <li>element1 ~ element2 - tame pačiame lygmenyje 
+                        už element1 einantys visi element2 nesvarbu kaip toli </li>
+                <li>selector:hover - pelė užėjusi ant 
+                    selektinio elemento. </li>
+            </ul>
+        </section>
+        <div class="idomu">
+            <h1>Hello world!</h1>
+            <p>We said that already...</p>
+        </div>
+        <section id="background1"> <!--Background-->
+            <h1>Background</h1>
+            <div class="background">Labas</div>
+            <div class="background2"></div>
+            <div class="background3"></div>
+            <div class="background4">
+                <div class="transparentBG"></div>
+                <div class="content">Labas</div>
+            </div>
+            <div class="background5"></div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 paskaita</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <nav></nav>
+    </header>
+    <main>
+        <section class="sek1"> <!--Paveldimumas-->
+            <h1>Paveldimumas</h1>
+            <h2>Vaikinis ir tėvinis elementai</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate enim quaerat, non, odit dolore, 
+                ex voluptatibus repudiandae magnam nobis 
+                fuga ducimus? Accusantium a libero ipsa 
+                hic illo non quas. Voluptate.</p>
+        </section>
+        <section><!--Naršyklės numatytieji stiliai-->
+            <h1>User Agent Stylesheet</h1>
+            <h2>User Agent Stylesheet</h2>
+            <h3>Normalize or Reset C</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Voluptate enim quaerat, non, odit dolore, 
+                ex voluptatibus repudiandae magnam nobis 
+                fuga ducimus? Accusantium a libero ipsa 
+                hic illo non quas. Voluptate.</p>
+        </section>
+        <section> <!--CSS stilių prioritetai-->
+            <h1>CSS stilių prioritetai nuo svarbiausio
+                iki mažiau svarbaus</h1>
+            <ol>
+                <li>!important - retai naudojamas, geriausia nenaudoti</li>
+                <li>Inline - 1000</li>
+                <li>ID - 100</li>
+                <li>Class - 10</li>
+                <li>Element - 1</li>
+                <li>CSS order (Svarbu jeigu vienoda specifikacija)</li>
+                <li>User Agent Stylesheets</li>
+                <li>Inheriting</li>
+            </ol>
+            <p>
+                Esant dviem selektoriam, kurie nusako to paties
+                elemento vienodus stilius, yra atsižvelgiama
+                į tų selektorių specifikacijas. Aukštesnį balą
+                turintis selektorius turi aukštesnį prioritetą.
+            </p>
+            <p>
+                Esant dviem vienodos specifikacijos selektoriams
+                keičiant tą patį stilių, yra atsižvelgiama į SCC
+                eiliškumą. Kuris selektorius yra aprašytas vėliau, tas
+                turės aukštesnį prioritetą.
+            </p>
+            <p>
+                <span>Jeigu įmanoma nenaudoti!!!</span> '!important' prierašo. 
+                !important prierašas ignoruoja visus prioritetus 
+                (neveikia su paveldėjimu) ir suteikia nurodytą stilių.
+            </p>
+        </section>
+        <section> <!--Multimedijos-->
+            <h1>Multimedijos</h1>
+            <ul>
+                <li>img</li>
+                <li>video</li>
+                <li>audio</li>
+                <li>source</li>
+                <li>iframe</li>
+            </ul>
+            <div>
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <video src="" controls autoplay loop></video>
+                </div>
+                <div>
+                    <audio src="" controls></audio>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8UYH4We6_Rw?si=oUjsaUeu9IYMpXeL" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

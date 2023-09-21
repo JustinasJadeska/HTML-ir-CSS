@@ -1,0 +1,32 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td:hover {
+    color: white;
+    background-color: blue;
+}
+
+th:hover {
+    color: white;
+    background-color: blue;
+}
+
+tr:hover {
+    color: white;
+    background-color: blue;
+}
